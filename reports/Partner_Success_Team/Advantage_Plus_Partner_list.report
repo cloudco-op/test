@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_quality_index__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Company_Size__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Annual_Revenue2__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Estimated_Projects_Proposals_Per_Year__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Average_Project_Size__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Current_Project_Win_Rate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <operator>equals</operator>
+            <value>Pro,Pro Channel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>includes</operator>
+            <value>Noesis Financing Services-Advantage PLUS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>equals</operator>
+            <value>Pro Channel</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Advantage Plus Partner list</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2014-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

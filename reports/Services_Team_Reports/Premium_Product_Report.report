@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Project_Customer__c</field>
+    </columns>
+    <columns>
+        <field>Account.Services_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Payment_Advantage_Payment_Option__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.X4_9_EPA_Buy_Down_Fees__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Performance_Rebate_Option__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Performance_Rebate_Fees__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Borrower_M_V_Fees__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Project_Amount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Self_Service_Proposal__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Premium Product Report</description>
+    <filter>
+        <booleanFilter>((1 AND 2 AND 3 AND (4 OR 5 OR 6 or 7)))</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Services_Owner__c</column>
+            <operator>contains</operator>
+            <value>Achai Broner,Angel Moreno,Sahil Diwan,Cayla Johnston</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Titan_Credit_App_Received__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Duplicate_EBP__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.X4_9_EPA_Buy_Down_Fees__c</column>
+            <operator>greaterThan</operator>
+            <value>USD 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Borrower_M_V_Fees__c</column>
+            <operator>greaterThan</operator>
+            <value>USD 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Performance_Rebate_Fees__c</column>
+            <operator>greaterThan</operator>
+            <value>USD 1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Payment_Advantage_Payment_Option__c</column>
+            <operator>contains</operator>
+            <value>promo</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Premium Product Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

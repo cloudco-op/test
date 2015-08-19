@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Pro_Type__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Project_Customer__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Average_Project_Size__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>((1 AND (2 ) AND 3) AND 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Qualified,Engaged/Evaluating,Quote/Proposal,Negotiation,Signatures,Post Sales Engagement,Post Sales Engagement-Remarket,Post Sales Upsell,Pending Payment,Unqualified,Closed Won,Delayed_Was in Quote/Proposal,Delayed_Was in Negotiation,Delayed_Was in Signature,Delayed_Was in Engaged/Evaluating,Delayed_Was in Qualified,Delayed_Was in Unqualified</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <operator>equals</operator>
+            <value>Pro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>includes</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>notEqual</operator>
+            <value>katrina white,rick davis,tracy jude,achai broner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Delayed_Was in Quote/Proposal,Delayed_Was in Engaged/Evaluating,Delayed_Was in Qualified</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Colangelo-Stalled Pro Reporting pipeline</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2013-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-04-01</startDate>
+    </timeFrameFilter>
+</Report>

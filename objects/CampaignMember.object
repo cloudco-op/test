@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Create_Opportunity</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Annual_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Lead.Annual_Revenue_Picklist__c,
+&quot;&lt;$2.5&quot;,&quot;&lt;$2.5&quot;,
+&quot;$2.5M-$4.9M &quot;,&quot;$2.5M-$4.9M&quot;,
+&quot;$5M-$9.9M&quot;,&quot;$5M-$9.9M&quot;,
+&quot;$10M+&quot;,&quot;$10M+&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Annual Revenue</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Project_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Average_Project_Size__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Project Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Buy_Side__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Buy_Side__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Buy Side</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City</fullName>
+    </fields>
+    <fields>
+        <fullName>CompanyOrAccount</fullName>
+    </fields>
+    <fields>
+        <fullName>Company_Headquarter_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Lead.Company_Headquarter_State__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Headquarter State</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Lead.Company_Size__c , 
+&quot;1 to 10&quot;,&quot;1 to 10&quot;,
+&quot;11-19&quot;,&quot;11-19&quot;,
+&quot;20-39&quot;,&quot;20-39&quot;,
+&quot;40-100&quot;,&quot;40-100&quot;,
+&quot;101-250&quot;,&quot;101-250&quot;,
+&quot;251-500&quot;,&quot;251-500&quot;,
+&quot;501-1,000&quot;,&quot;501-1,000&quot;,
+&quot;1,000+&quot;,&quot;1,000+&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Size</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country</fullName>
+    </fields>
+    <fields>
+        <fullName>Country2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Sales_Coverage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country2</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Relationship_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.Customer_Relationship_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Relationship Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+    </fields>
+    <fields>
+        <fullName>ECM_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES(Lead.ECM_Type__c,&quot;Solar&quot;),&quot;Solar,&quot;,&quot;&quot;)  &amp; 
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Lighting&quot;),&quot;Lighting,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Cooling/Heating/Refrigeration&quot;),&quot;Cooling/Heating/Refrigeration,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Building Automation/Controls&quot;),&quot;Building Automation/Controls,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Energy Supply/Co-Generation/Storage&quot;),&quot;Energy Supply/Co-Generation/Storage,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Metering/Data Logger&quot;),&quot;Metering/Data Logger,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Water Management&quot;),&quot;Water Management,&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Deep Retrofit (Multi ECM Types)&quot;),&quot;Deep Retrofit (Multi ECM Types),&quot;,&quot;&quot;)  &amp;
+IF(INCLUDES(Lead.ECM_Type__c,&quot;Other&quot;),&quot;Other,&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ECM Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstName</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstRespondedDate</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+    </fields>
+    <fields>
+        <fullName>HasResponded</fullName>
+    </fields>
+    <fields>
+        <fullName>Job_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Job_Category__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Category</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastName</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hoovers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Emmerich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Purchased</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Team Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGR List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lacy&apos;s Picks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Email Blast</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List Passive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Targeted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGR 2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.LeadSource)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Source</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Lead.Status, 
+&quot;Lead&quot;,&quot;Lead&quot;,
+&quot;New Lead&quot;,&quot;New Lead&quot;,
+&quot;Nurture&quot;,&quot;Nurture&quot;,
+&quot;Remarket&quot;,&quot;Remarket&quot;,
+&quot;Converted Lead&quot;,&quot;Converted Lead&quot;,
+&quot;Trash&quot;,&quot;Trash&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Lead.Lead_Type__c , 
+&quot;Primary&quot;,&quot;Primary&quot;, 
+&quot;Secondary &quot;,&quot;Secondary&quot;,  
+&quot;Target&quot;,&quot;Target&quot;, 
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>PostalCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Primary_Business_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.Primary_Business_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Business Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Technology_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.Primary_Technology_Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Technology Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Lead_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Lead.Product_Lead_Type__c ,
+&quot;Pro (Front Office+M&amp;V)&quot;,&quot;Pro (Front Office+M&amp;V)&quot;,
+&quot;Pro Front Office&quot;,&quot;Pro Front Office&quot;,
+&quot;Pro M&amp;V&quot;,&quot;Pro M&amp;V&quot;,
+&quot;Noesis Financing Services&quot;,&quot;Noesis Financing Services&quot;,
+&quot;Pro Data Services&quot;,&quot;Pro Data Services&quot;,
+&quot;Pro Customer Engagement Services&quot;,&quot;Pro Customer Engagement Services&quot;,
+&quot;Project Finance Assessment (PFA)&quot;,&quot;Project Finance Assessment (PFA)&quot;,
+&quot;Pro Channel&quot;,&quot;Pro Channel&quot;,
+&quot;Program Partner&quot;,&quot;Program Partner&quot;,
+&quot;Program Affiliate&quot;,&quot;Program Affiliate&quot;,
+&quot;Concierge Partner&quot;,&quot;Concierge Partner&quot;,
+&quot;Concierge Vendor&quot;,&quot;Concierge Vendor&quot;,
+&quot;Marketing Services&quot;,&quot;Marketing Services&quot;,
+&quot;EAP&quot;,&quot;EAP&quot;,
+&quot;MEC Customization&quot;,&quot;MEC Customization&quot;,
+&quot;MEC Subscriber&quot;,&quot;MEC Subscriber&quot;,
+&quot;Tradeshow Partner&quot;,&quot;Tradeshow Partner&quot;,
+&quot;Pro Software&quot;,&quot;Pro Software&quot;,
+&quot;Other&quot;,&quot;Other&quot;,
+&quot;Financing Partner&quot;,&quot;Financing Partner&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Lead Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remarket_Reason__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Lead.Remarket_Reason__c,
+&quot;International Location&quot;,&quot;International Location&quot;, 
+&quot;New Zealand,Singapore&quot;,&quot;Australia,New Zealand,Singapore&quot;, 
+&quot;Residential Focus&quot;,&quot;Residential Focus&quot;,
+&quot;Product Limitations&quot;,&quot;Product Limitations&quot;,
+&quot;Not Interested but Good Future Candidate&quot;,&quot;Not Interested but Good Future Candidate&quot;,
+&quot;Budget Constraint&quot;,&quot;Budget Constraint&quot;,
+&quot;Internal Re-org&quot;,&quot;Internal Re-org&quot;,
+&quot;Business is Not a Good Fit&quot;,&quot;Business is Not a Good Fit&quot;,
+&quot;Student&quot;,&quot;Student&quot;,
+&quot;Timing&quot;,&quot;Timing&quot;,
+&quot;Decision Maker is Not Interested&quot;,&quot;Decision Maker is Not Interested&quot;,
+&quot;Lead Non Responsive&quot;,&quot;Lead Non Responsive&quot;,
+&quot;Project Finance Partnership Request&quot;,&quot;Project Finance Partnership Request&quot;,
+&quot;Buy-Side&quot;,&quot;Buy-Side&quot;,
+&quot;Competitor&quot;,&quot;Competitor&quot;,
+&quot;Other&quot;,&quot;Other&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remarket Reason</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reraised__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Reraised__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reraised</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Technology_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Sales_Technology_Owner__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Technology Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salutation</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Mr.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ms.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mrs.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dr.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prof.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Responded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Street</fullName>
+    </fields>
+    <fields>
+        <fullName>Target_Lead_Index__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead.Target_Lead_Index__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Lead Index</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+    </fields>
+</CustomObject>

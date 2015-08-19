@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 Or 2 Or 3</booleanFilter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <operator>contains</operator>
+            <value>download,request,registration,clicked,webinar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Opt_In__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Lead.Opt_In_by_Engagement__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Test Lead REport_ Taina</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignLead</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+</Report>

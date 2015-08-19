@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.EBP_Project_Creator_Name__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Project_Customer__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Noesis_Borrower_Discussion_Date__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Project_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Project_Quality_Index__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.Services_Owner__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shannon Borrower Meeting Report</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <operator>equals</operator>
+            <value>cayla johnston,shannon mcaulay,David Emmerich,Matthew Worth,achai broner,angel moreno,matt worth,mike thomas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Services_Opportunity__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Duplicate_EBP__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Shannon Borrower Meeting Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Noesis_Borrower_Discussion_Date__c</dateColumn>
+        <endDate>2014-10-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-01-01</startDate>
+    </timeFrameFilter>
+</Report>

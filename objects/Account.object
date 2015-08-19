@@ -1,0 +1,4277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hoovers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Emmerich</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Purchased</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List - Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Team Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGR List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lacy&apos;s Picks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Email Blast</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List Passive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Targeted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGR 2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the account is an in-active account: An In-active is defined as account is no longer engaged with Noesis</inlineHelpText>
+        <label>Account Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Management_Territory2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Company_Headquarter_State__c, 
+&quot;Alabama&quot;,&quot;Katrina&quot;, 
+&quot;Arkansas&quot;,&quot;Katrina&quot;,
+&quot;Florida&quot;,&quot;Katrina&quot;,
+&quot;Georgia&quot;,&quot;Katrina&quot;,
+&quot;Kentucky&quot;,&quot;Katrina&quot;,
+&quot;Louisiana&quot;,&quot;Katrina&quot;,
+&quot;New York&quot;,&quot;Katrina&quot;,
+&quot;Maryland&quot;,&quot;Katrina&quot;,
+&quot;Mississippi&quot;,&quot;Katrina&quot;,
+&quot;North Carolina&quot;,&quot;Katrina&quot;,
+&quot;South Carolina&quot;,&quot;Katrina&quot;,
+&quot;Tennessee&quot;,&quot;Katrina&quot;,
+&quot;Virginia&quot;,&quot;Katrina&quot;,
+&quot;Washington DC&quot;,&quot;Katrina&quot;,
+&quot;West Virginia&quot;,&quot;Katrina&quot;,
+&quot;Virgin Islands, U.S.&quot;,&quot;Katrina&quot;,
+&quot;US Virgin Islands&quot;,&quot;Katrina&quot;,
+&quot;Puerto Rico&quot;,&quot;Katrina&quot;,
+&quot;Guam&quot;,&quot;Katrina&quot;,
+&quot;Connecticut&quot;,&quot;Katrina&quot;, 
+&quot;Delaware&quot;,&quot;Katrina&quot;,
+&quot;Maine&quot;,&quot;Katrina&quot;,
+&quot;Massachusetts&quot;,&quot;Katrina&quot;,
+&quot;New Hampshire&quot;,&quot;Katrina&quot;,
+&quot;New Jersey&quot;,&quot;Katrina&quot;,
+&quot;Ohio&quot;,&quot;Colangelo&quot;,
+&quot;Pennsylvania&quot;,&quot;Katrina&quot;,
+&quot;Rhode Island&quot;,&quot;Katrina&quot;,
+&quot;Vermont&quot;,&quot;Katrina&quot;,
+&quot;Quebec&quot;,&quot;Colangelo&quot;,
+&quot;Newfoundland&quot;,&quot;Colangelo&quot;,
+&quot;Prince Edward Island&quot;,&quot;Colangelo&quot;,
+&quot;New Brunswick&quot;,&quot;Colangelo&quot;,
+&quot;Nova Scotia&quot;,&quot;Colangelo&quot;,
+&quot;Illinois&quot;,&quot;Colangelo&quot;,
+&quot;Indiana&quot;,&quot;Colangelo&quot;,
+&quot;Iowa&quot;,&quot;Colangelo&quot;,
+&quot;Kansas&quot;,&quot;Colangelo&quot;,
+&quot;Michigan&quot;,&quot;Colangelo&quot;,
+&quot;Minnesota&quot;,&quot;Colangelo&quot;,
+&quot;Missouri&quot;,&quot;Colangelo&quot;,
+&quot;Nebraska&quot;,&quot;Colangelo&quot;,
+&quot;North Dakota&quot;,&quot;Roger&quot;,
+&quot;Oklahoma&quot;,&quot;Colangelo&quot;,
+&quot;South Dakota&quot;,&quot;Roger&quot;,
+&quot;Texas&quot;,&quot;Colangelo&quot;,
+&quot;Wisconsin&quot;,&quot;Colangelo&quot;,
+&quot;Ontario&quot;,&quot;Katrina&quot;,
+&quot;Manitoba&quot;,&quot;Roger&quot;,
+&quot;Nunavut&quot;,&quot;Roger&quot;,
+&quot;Northwest Territories&quot;,&quot;Roger&quot;,
+&quot;Alaska&quot;,&quot;Roger&quot;,
+&quot;Arizona&quot;,&quot;Roger&quot;,
+&quot;California&quot;,&quot;Roger&quot;,
+&quot;Colorado&quot;,&quot;Roger&quot;,
+&quot;Hawaii&quot;,&quot;Roger&quot;,
+&quot;Idaho&quot;,&quot;Roger&quot;,
+&quot;Montana&quot;,&quot;Roger&quot;,
+&quot;Nevada&quot;,&quot;Roger&quot;,
+&quot;New Mexico&quot;,&quot;Roger&quot;,
+&quot;Oregon&quot;,&quot;Roger&quot;,
+&quot;Utah&quot;,&quot;Roger&quot;,
+&quot;Washington&quot;,&quot;Roger&quot;,
+&quot;Wyoming&quot;,&quot;Roger&quot;,
+&quot;British Columbia&quot;,&quot;Roger&quot;,
+&quot;Alberta&quot;,&quot;Roger&quot;,
+&quot;Yukon&quot;,&quot;Roger&quot;,
+&quot;Saskatchewan&quot;,&quot;Roger&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Management Territory</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Manager_Territory2__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Manager Territory</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Colangelo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Katrina</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roger</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tracy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Manager_Territory_Exception__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Account Manager Territory Exception</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Sales_Reps__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of project developer sales reps for this account</inlineHelpText>
+        <label># Account Sales Reps</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Subscription_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Subscription Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>One-Time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pilot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Technology_Territory__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Primary_Technology_Type__c  , 
+&quot;CO=Controls&quot;,&quot;Katrina&quot;, 
+&quot;HV=HVAC&quot;,&quot;Katrina&quot;, 
+&quot;DR=Deep Retrofit&quot;,&quot;Katrina&quot;, 
+&quot;O=Other&quot;,&quot;Katrina&quot;, 
+&quot;LI=Lighting&quot;,&quot;Roger&quot;, 
+&quot;SO=Solar&quot;,&quot;Roger&quot;, 
+&quot;&quot;)</formula>
+        <label>Account Technology Territory</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Annual_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Revenue</label>
+        <picklist>
+            <picklistValues>
+                <fullName>&lt;$2M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$2M-$4.9M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$5M-$9.9M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$10M+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Average_Project_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Average Project Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Cancellation_or_Non_Renewal_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the date that the customer would like to cancel/or not renew date</inlineHelpText>
+        <label>Cancellation or Non-Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cayla_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cayla Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closing_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing Fee</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Company_Headquarter_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Headquarter State</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Company_Page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Company Page</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Company_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Size</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1-10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11-19</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20-50</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>51-100</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>101-250</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>251-500</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>501-1000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1001+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Completed_question__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Custom_Path_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Path 2</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Path_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Path 3</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Relationship_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Relationship Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Buy Side</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sell Side</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_quality_index__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer quality index</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Developer_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer Index</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Developer_Profile_Receipt_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer Profile Receipt Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Developer_Profile_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer Profile Request Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Developer_Rebate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The respective Rebate that corresponds to the Annual project volume</inlineHelpText>
+        <label>Developer Rebate</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Developer_SSA_Discussion__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer SSA Discussion Results</label>
+        <picklist>
+            <picklistValues>
+                <fullName>SSA Candidate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SSA Introduction/Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Application Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Application Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed SSA Sent to Hannon for Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lender Approved SSA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lender Declined SSA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Developer Declined SSA Financing Option</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SSA Kick-Off/Traning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Developer_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Developer Score</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Project_Proposals_Per_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated # Project Proposals Per Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Financing__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Financing Conversations</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Operating Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Municipal Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PACE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Efficiency Performance Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shared Savings Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bank Loan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Funded_Project_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the respective annually funded project tier</inlineHelpText>
+        <label>Funded Project Amount</label>
+        <picklist>
+            <picklistValues>
+                <fullName>$1M&lt;$3M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$3M&lt;$5M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$5M+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Funded_Project_Year__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the project year for which the annually funded amount equates to</inlineHelpText>
+        <label>Funded Project Year</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2018</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Garden_Address__c</fullName>
+        <description>Custom garden address for this company (i.e. https://traneoregon.noesisenergy.com)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the garden address.   If this user is in the Noesis Garden, this is simply https://www.noesisenergy.com/</inlineHelpText>
+        <label>Garden Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Building Envelope</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chilled Water Cooling</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Centers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Motors and Drives</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaged Cooling</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retrofit Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ventilation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy - General</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>[Unknown]</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Kickoff_Call__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Kickoff Call</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Select original source of lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GGR List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>New_Customer_Onboard_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>New Customer: Onboard Year</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2013</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>New_Renewal_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>New Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Noesis_Executive_Onsite_Visit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Noesis Executive Onsite Visit Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Orig_Registration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Orig Registration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Orig_Renewal_Date2__c</fullName>
+        <externalId>false</externalId>
+        <label>Orig Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Origination_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Origination Owner</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Dawn Jabour</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kellie Newsome</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roger Dowie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shannon Mcaulay</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Parent Account</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Success_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Partner Success Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Advantage_Conversation_D__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Advantage  Conversation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Advantage_Package_Option__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment_Advantage_ Package Option</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier I=Promo I</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier II=Promo II</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Base Option</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Performance_Rebate_Conversation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Performance Rebate Conversation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Performance_Rebate_Participant__c</fullName>
+        <externalId>false</externalId>
+        <label>Performance Rebate Participant</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Pre_Fund_Finance_Lender__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-Fund Finance Lender</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ascentium Capital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DLL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Fund__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-Fund %</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Funding_Qualified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check the box if the account has been qualified for pre-funding</inlineHelpText>
+        <label>Pre-Funding Qualified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Business_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Business Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Technology_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Technology Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pro_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Pro Type</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pro_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Pro Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pro (Front Office and M&amp;V)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro Front Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro Front Office 90 Day Trial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro M&amp;V</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Noesis Financing Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro Channel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Custom Reports</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B2B Integration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Engagement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pro_User_Logins__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the # of Pro User logins for this Developer Account</inlineHelpText>
+        <label># Pro User Logins</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quickstart_Path__c</fullName>
+        <externalId>false</externalId>
+        <label>Quickstart Path</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reference_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reference Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Conversation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Conversation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Decline_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Decline Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Financing Vehicles not Sufficient</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No lift in Projects Won</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Decreased Sales Cycle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reason not Given</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Services not Their Focus</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro Software Issues</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Renewal_Effort__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Effort</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Q1, 2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Q2,2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Q3, 2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Pro_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Pro Type</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Renewal_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Reduced Sales Cycle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Increase in Projects Won</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financing Vehicles</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3IA Services/Analysis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SQL_Types_List__c</fullName>
+        <externalId>false</externalId>
+        <label>SQL Types List</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SSA_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if approved for SSA Financing Vehicle</inlineHelpText>
+        <label>SSA Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Selected_Noesis_Financing__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Noesis Financing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Operating Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Municipal Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PACE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Efficiency Performance Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shared Savings Agreement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bank Loan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Services_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Person in services responsible for this account</description>
+        <externalId>false</externalId>
+        <label>Services Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Target_Lead_Index__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Lead Index</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Top_Account_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Top Account Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Top_Account_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Top Account Owner</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Katrina Polansky</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Matt Colangelo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roger Dowie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Top_Account_Ranking__c</fullName>
+        <externalId>false</externalId>
+        <label>Top Account Ranking</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Top_Account_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Top Account Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Top_User_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Top User Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Top_User_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Top User First &amp; Last Name</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Top_User_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Top User Phone #</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Total_Funded_Project_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the total funded project $ amount over multiple years</inlineHelpText>
+        <label>Total Funded Project Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Project_Counts__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Project Counts</label>
+        <summarizedField>Opportunity.Project_Count2__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Services_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Duplicate_EBP__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Proposal_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Proposal Amount</label>
+        <summarizedField>Opportunity.Proposal_Amount2__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Services_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Duplicate_EBP__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Won_Project_Counts__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Won Project Counts</label>
+        <summarizedField>Opportunity.Project_Won_Count__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Services_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Duplicate_EBP__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Won_Proposal_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Won Proposal Amount</label>
+        <summarizedField>Opportunity.Proposal_Won_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Services_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Duplicate_EBP__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MEC Subscriber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financing Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EAP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Upsell_Pro_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Upsell Products</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advantage to Advantage PLUS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advantage PLUS to Pro w/Advantage PLUS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro to Pro W/Advantage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro to Pro w/Advantage PLUS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>User_Activity_and_EBP_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>User Activity and EBP Information</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>User_Provisioning__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>User Provisioning</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>X2014_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>2014 Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X2015_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>2015 Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X4_9_Participant_Conversation_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>4.9% Participant Conversation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X4_9_Participant__c</fullName>
+        <externalId>false</externalId>
+        <label>4.9% Participant</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Domain_Mapping__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Domain Mapping</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Last_Sync_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Sync Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Last_Sync_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Sync Status</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Result__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the result of whether the Zendesk system was updated with the Account record changes</description>
+        <externalId>false</externalId>
+        <label>Zendesk Result</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Tags__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tags</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Zendesk_Organization_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains the Zendesk ORG Id</description>
+        <externalId>false</externalId>
+        <label>Zendesk Organization Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Zendesk_Organization__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify your Zendesk Organization name here if you&apos;d like to override the default behavior of the ticket view.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show Zendesk tickets for the specified organization instead of the combined tickets for all users in the account.</inlineHelpText>
+        <label>Zendesk Organization</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Zendesk_OutofSync__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set to True if the record is not synced with Zendesk Organization</description>
+        <externalId>false</externalId>
+        <label>Zendesk_OutofSync</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk__Zendesk_oldTags__c</fullName>
+        <deprecated>false</deprecated>
+        <description>contains the old tags before changes were made to the tags. To handle deleting tags in Zendesk system.</description>
+        <externalId>false</externalId>
+        <label>Zendesk_oldTags</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Zendesk__createdUpdatedFlag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used in trigger to prevent looping of after insert and update. This flag is used to stop the account that came for creation to get updated again thereby preventing the loop</description>
+        <externalId>false</externalId>
+        <label>createdUpdatedFlag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAAccountsPayableControl__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>A vendor must refer to a GLA for it to be used in making a posting. This association is inherited from the Accounting Dimension.</description>
+        <externalId>false</externalId>
+        <label>Accounts Payable Control</label>
+        <referenceTo>c2g__codaGeneralLedgerAccount__c</referenceTo>
+        <relationshipLabel>Accounts (Accounts Payable Control Account)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAAccountsReceivableControl__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>An appropriate accounts receivable (or trade debtors) general ledger account.</description>
+        <externalId>false</externalId>
+        <label>Accounts Receivable Control</label>
+        <referenceTo>c2g__codaGeneralLedgerAccount__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAAllowDeleteInUse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Allow Deletion of Account in Use</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankAccountName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the bank account</description>
+        <externalId>false</externalId>
+        <label>Bank Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankAccountNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The account number</description>
+        <externalId>false</externalId>
+        <label>Bank Account Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankAccountReference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The account reference, sometimes required for electronic transfers</description>
+        <externalId>false</externalId>
+        <label>Bank Account Reference</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankCity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The city</description>
+        <externalId>false</externalId>
+        <label>Bank City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankCountry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The country</description>
+        <externalId>false</externalId>
+        <label>Bank Country</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankFax__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The fax number</description>
+        <externalId>false</externalId>
+        <label>Bank Fax</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankIBANNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The IBAN number</description>
+        <externalId>false</externalId>
+        <label>Bank IBAN Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the bank</description>
+        <externalId>false</externalId>
+        <label>Bank Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankPhone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The bank phone number</description>
+        <externalId>false</externalId>
+        <label>Bank Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankSWIFTNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The SWIFT or similar number</description>
+        <externalId>false</externalId>
+        <label>Bank SWIFT Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankSortCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The sort code / bank identifier</description>
+        <externalId>false</externalId>
+        <label>Bank Sort Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankStateProvince__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The state / county / province</description>
+        <externalId>false</externalId>
+        <label>Bank State/Province</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankStreet__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Bank Street</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABankZipPostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The postal code</description>
+        <externalId>false</externalId>
+        <label>Bank Zip/Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABaseDate1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which terms will be calculated.</description>
+        <externalId>false</externalId>
+        <label>Base Date 1</label>
+        <picklist>
+            <picklistValues>
+                <fullName>End of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice Date</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Start of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABaseDate2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which terms will be calculated</description>
+        <externalId>false</externalId>
+        <label>Base Date 2</label>
+        <picklist>
+            <picklistValues>
+                <fullName>End of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice Date</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Start of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABaseDate3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which terms will be calculated</description>
+        <externalId>false</externalId>
+        <label>Base Date 3</label>
+        <picklist>
+            <picklistValues>
+                <fullName>End of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice Date</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Start of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABaseDate4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date on which terms will be calculated</description>
+        <externalId>false</externalId>
+        <label>Base Date 4</label>
+        <picklist>
+            <picklistValues>
+                <fullName>End of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice Date</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Start of Next Month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODABillingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The billing method</description>
+        <externalId>false</externalId>
+        <label>Billing Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self-billing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditAgency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the credit agency</description>
+        <externalId>false</externalId>
+        <label>Credit Agency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditLimitEnabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set to enable the credit limit</description>
+        <externalId>false</externalId>
+        <label>Credit Limit Enabled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditLimitReviewed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date when the limit was last reviewed</description>
+        <externalId>false</externalId>
+        <label>Credit Limit Reviewed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditLimit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The credit limit in org currency</description>
+        <externalId>false</externalId>
+        <label>Credit Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditManager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The manager responsible for the credit details</description>
+        <externalId>false</externalId>
+        <label>Credit Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditRatingReviewed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date the rating was last reviewed</description>
+        <externalId>false</externalId>
+        <label>Credit Rating Reviewed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditRating__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The rating given by the credit agency</description>
+        <externalId>false</externalId>
+        <label>Credit Rating</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditReference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The reference at the credit agency</description>
+        <externalId>false</externalId>
+        <label>Credit Reference</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODACreditStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The current credit status. The picklist is user-definable</description>
+        <externalId>false</externalId>
+        <label>Credit Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Credit Allowed</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cash with Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADaysOffset1__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of days to add to the base date</description>
+        <externalId>false</externalId>
+        <label>Days Offset 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADaysOffset2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of days to add to the base date</description>
+        <externalId>false</externalId>
+        <label>Days Offset 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADaysOffset3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of days to add to the base date</description>
+        <externalId>false</externalId>
+        <label>Days Offset 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADaysOffset4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of days to add to the base date</description>
+        <externalId>false</externalId>
+        <label>Days Offset 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADefaultExpenseAccount__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The default GLA on expense lines.</description>
+        <externalId>false</externalId>
+        <label>Default Expense Account</label>
+        <referenceTo>c2g__codaGeneralLedgerAccount__c</referenceTo>
+        <relationshipLabel>Accounts (Default Expense Account)</relationshipLabel>
+        <relationshipName>Accounts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADescription1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The description of the settlement terms</description>
+        <externalId>false</externalId>
+        <label>Description 1</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADescription2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The description of the settlement terms</description>
+        <externalId>false</externalId>
+        <label>Description 2</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADescription3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The description of the settlement terms</description>
+        <externalId>false</externalId>
+        <label>Description 3</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADescription4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The description of the settlement terms</description>
+        <externalId>false</externalId>
+        <label>Description 4</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADimension1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Dimension 1</label>
+        <referenceTo>c2g__codaDimension1__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADimension2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Dimension 2</label>
+        <referenceTo>c2g__codaDimension2__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADimension3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Dimension 3</label>
+        <referenceTo>c2g__codaDimension3__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADimension4__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Dimension 4</label>
+        <referenceTo>c2g__codaDimension4__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADiscount1__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The amount of discount to be applied</description>
+        <externalId>false</externalId>
+        <label>Discount 1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADiscount2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of discount to be applied</description>
+        <externalId>false</externalId>
+        <label>Discount 2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADiscount3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of discount to be applied</description>
+        <externalId>false</externalId>
+        <label>Discount 3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODADiscount4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The amount of discount to be applied</description>
+        <externalId>false</externalId>
+        <label>Discount 4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAECCountryCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>EC Country Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CZ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAExemptionCertificate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Exemption Certificate</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>32</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAFederallyReportable1099__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Federally Reportable 1099</description>
+        <externalId>false</externalId>
+        <label>Federally Reportable 1099</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAFinanceContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Finance Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAIncomeTaxType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Income Tax Type</description>
+        <externalId>false</externalId>
+        <label>Income Tax Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1 - Rents</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - Royalties</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - Other Income</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 - Federal Income Tax Withheld</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 - Fishing Boat Proceeds</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 - Medical and Healthcare Payments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 - Nonemployee Compensation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 - Substitute Payments in Lieu of Dividends or Interest</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 - Payer Made Direct Sales of 5000 or More</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 - Crop Insurance Proceeds</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 - Unused 11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 - Unused 12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13 - Excess Golden Parachute Payments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14 - Gross Proceeds Paid to an Attorney</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Reportable</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAInputVATCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Input VAT Code</label>
+        <referenceTo>c2g__codaTaxCode__c</referenceTo>
+        <relationshipLabel>Accounts (Input VAT Code)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAInvoiceEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invoice Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAMergeId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Merge Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAOutputVATCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Output VAT Code</label>
+        <referenceTo>c2g__codaTaxCode__c</referenceTo>
+        <relationshipLabel>Accounts (Output VAT Code)</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAPaymentMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The payment method</description>
+        <externalId>false</externalId>
+        <label>Payment Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAReportingCode__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>A unique code used for reporting</description>
+        <externalId>false</externalId>
+        <label>Reporting Code</label>
+        <length>24</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODASalesTaxStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sales Tax Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Taxable</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exempt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exempt for Qualifying Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODATaxCalculationMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The method of calculating tax in the UK.</description>
+        <externalId>false</externalId>
+        <label>Tax Calculation Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Gross</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Net of Discount</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODATaxCode1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tax Code 1</label>
+        <referenceTo>c2g__codaTaxCode__c</referenceTo>
+        <relationshipLabel>Accounts (Tax Code 1)</relationshipLabel>
+        <relationshipName>AccountsTC1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODATaxCode2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tax Code 2</label>
+        <referenceTo>c2g__codaTaxCode__c</referenceTo>
+        <relationshipLabel>Accounts (Tax Code 2)</relationshipLabel>
+        <relationshipName>AccountsTC2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODATaxCode3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tax Code 3</label>
+        <referenceTo>c2g__codaTaxCode__c</referenceTo>
+        <relationshipLabel>Accounts (Tax Code 3)</relationshipLabel>
+        <relationshipName>AccountsTC3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CODATaxpayerIdentificationNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Taxpayer Identification Number</description>
+        <externalId>false</externalId>
+        <label>Taxpayer Identification Number</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAUnitOfWork__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Unit of Work</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAVATRegistrationNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>VAT Registration Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CODAVATStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tax Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Home</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EC Registered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EC Non-registered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Export</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>current_Project_Win_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Project Win Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>custom_Path_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Path 1</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ffex__LegalName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account Legal Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_NFS_Users__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of Financing Services logins for this Developer Account</inlineHelpText>
+        <label># of NFS Users</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Users_Invited_QS__c</fullName>
+        <externalId>false</externalId>
+        <label># of Users Invited (QS)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Achai_s_accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Customer_quality_index__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>Account_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Services_Owner__c</field>
+            <operation>equals</operation>
+            <value>Achai Broner</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>notEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Achai&apos;s accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Account_Management_View2</fullName>
+        <booleanFilter>1 AND 2 AND 3 and 4</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Kellie Newsome,Dawn Jabour,Roger Dowie,Shannon Mcaulay</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>noesis,test,default</value>
+        </filters>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Angel_s_accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Customer_quality_index__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>Pro_Types__c</columns>
+        <columns>Account_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Services_Owner__c</field>
+            <operation>equals</operation>
+            <value>Angel Moreno</value>
+        </filters>
+        <label>Angel&apos;s Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Accounts</fullName>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>c2g__CODAAccountsReceivableControl__c</columns>
+        <columns>c2g__CODAOutputVATCode__c</columns>
+        <columns>ACCOUNT.CURRENCY_ISO_CODE</columns>
+        <columns>c2g__CODADescription1__c</columns>
+        <columns>c2g__CODABaseDate1__c</columns>
+        <columns>c2g__CODADaysOffset1__c</columns>
+        <columns>c2g__CODABillingMethod__c</columns>
+        <columns>c2g__CODAVATStatus__c</columns>
+        <columns>c2g__CODATaxCalculationMethod__c</columns>
+        <columns>c2g__CODASalesTaxStatus__c</columns>
+        <columns>c2g__CODAIncomeTaxType__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>contains</operation>
+            <value>Customer</value>
+        </filters>
+        <label>Customer Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Dawns_Account_Management_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 and 5</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Dawn Jabour</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>1,2,3,4</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Dawn&apos;s Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Dawns_Advantage_Payment</fullName>
+        <booleanFilter>(1 or 2 or 3) AND 4 and 5 and 6 and 7</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>New_Customer_Onboard_Year__c</columns>
+        <columns>Payment_Advantage_Package_Option__c</columns>
+        <columns>Payment_Advantage_Conversation_D__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>Origination_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2015</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2014</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2013</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Clean Fund LLC</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Dawn Jabour</value>
+        </filters>
+        <label>Dawn&apos;s Payment Advantage Effort</label>
+    </listViews>
+    <listViews>
+        <fullName>Hub_and_Spoke_View</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Orig_Renewal_Date2__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Garden_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Parent_Account__c</field>
+            <operation>equals</operation>
+            <value>Honeywell,IMARK Group,Affiliated Distributors</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,TRACY JUDE,TEST</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>Partner_Success_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Hub and Spoke View</label>
+    </listViews>
+    <listViews>
+        <fullName>Katrina_s_AD_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Manager_Territory2__c</field>
+            <operation>equals</operation>
+            <value>Katrina,Colangelo,Roger</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>1,2,3,4</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Partner_Success_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Parent_Account__c</field>
+            <operation>equals</operation>
+            <value>Affiliated Distributors</value>
+        </filters>
+        <label>Katrina&apos;s AD View</label>
+    </listViews>
+    <listViews>
+        <fullName>Katrina_s_Honeywell_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Manager_Territory2__c</field>
+            <operation>equals</operation>
+            <value>Katrina,Colangelo,Roger</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>3,4,1,2</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Partner_Success_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Parent_Account__c</field>
+            <operation>equals</operation>
+            <value>Honeywell</value>
+        </filters>
+        <label>Katrina&apos;s Honeywell View</label>
+    </listViews>
+    <listViews>
+        <fullName>Katrina_s_IMARK_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Manager_Territory2__c</field>
+            <operation>equals</operation>
+            <value>Katrina,Colangelo,Roger</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>3,4,1,2</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Partner_Success_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Parent_Account__c</field>
+            <operation>equals</operation>
+            <value>IMARK Group</value>
+        </filters>
+        <label>Katrina&apos;s IMARK View</label>
+    </listViews>
+    <listViews>
+        <fullName>Katrina_s_TRANE_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Manager_Territory2__c</field>
+            <operation>equals</operation>
+            <value>Katrina,Colangelo,Roger</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>3,4,1,2</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Partner_Success_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Parent_Account__c</field>
+            <operation>equals</operation>
+            <value>TRANE</value>
+        </filters>
+        <label>Katrina&apos;s TRANE View</label>
+    </listViews>
+    <listViews>
+        <fullName>Katrina_s_Top_Account_View</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Target_Lead_Index__c</columns>
+        <columns>Primary_Technology_Type__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>tracy jude</value>
+        </filters>
+        <filters>
+            <field>Top_Account_Owner__c</field>
+            <operation>equals</operation>
+            <value>Katrina Polansky</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,TEST,tracy jude</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <label>Katrina&apos;s Top Account View</label>
+    </listViews>
+    <listViews>
+        <fullName>Kellies_Account_Management_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 and 4</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Kellie Newsome</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Kellie&apos;s Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Matts_Top_Account_View</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Primary_Technology_Type__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <columns>Target_Lead_Index__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>tracy jude</value>
+        </filters>
+        <filters>
+            <field>Top_Account_Owner__c</field>
+            <operation>equals</operation>
+            <value>Matt Colangelo</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,TEST,tracy jude</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <label>Matt&apos;s Top Account View</label>
+    </listViews>
+    <listViews>
+        <fullName>Mike_s_accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Customer_quality_index__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>Pro_Types__c</columns>
+        <columns>Account_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Services_Owner__c</field>
+            <operation>equals</operation>
+            <value>Mike Thomas</value>
+        </filters>
+        <label>Mike&apos;s accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Q2_Renewal_Account_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Renewal_Conversation_Date__c</columns>
+        <columns>Renewal_Pro_Type__c</columns>
+        <columns>Renewal_Effort__c</columns>
+        <columns>Orig_Renewal_Date2__c</columns>
+        <columns>Orig_Registration_Date__c</columns>
+        <columns>Account_Manager_Territory2__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Pro_User_Logins__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Renewal_Effort__c</field>
+            <operation>equals</operation>
+            <value>&quot;Q2,2015&quot;</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>1,2,3,4</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <label>Q2 Renewal Account View</label>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Account_Management_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 and 5</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Roger Dowie</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>1,2,3,4</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Roger&apos;s Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Rogers_Advantage_Payment</fullName>
+        <booleanFilter>(1 or 2 or 3) AND 4 and 5 and 6 and 7</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>New_Customer_Onboard_Year__c</columns>
+        <columns>Payment_Advantage_Package_Option__c</columns>
+        <columns>Payment_Advantage_Conversation_D__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>Origination_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2015</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2014</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2013</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Clean Fund LLC</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Roger Dowie</value>
+        </filters>
+        <label>Roger&apos;s Payment Advantage Effort</label>
+    </listViews>
+    <listViews>
+        <fullName>Sahils_Account_Management_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Services_Owner__c</field>
+            <operation>equals</operation>
+            <value>sahil diwan</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <label>Sahils&apos;s Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Shannons_Account_Management_View</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 and 5</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Garden_Address__c</columns>
+        <columns>Kickoff_Call__c</columns>
+        <columns>Setup_Completed__c</columns>
+        <columns>Quickstart_Path__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Developer_Profile_Receipt_Date__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Shannon Mcaulay</value>
+        </filters>
+        <filters>
+            <field>Target_Lead_Index__c</field>
+            <operation>equals</operation>
+            <value>1,2,3,4</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Noesis Garden Account,DTZ</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Shannon&apos;s Account Management View</label>
+    </listViews>
+    <listViews>
+        <fullName>Shannons_Advantage_Payment</fullName>
+        <booleanFilter>(1 or 2 or 3) AND 4 and 5 and 6 and 7</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>New_Customer_Onboard_Year__c</columns>
+        <columns>Payment_Advantage_Package_Option__c</columns>
+        <columns>Payment_Advantage_Conversation_D__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Total_Project_Counts__c</columns>
+        <columns>Total_Proposal_Amount__c</columns>
+        <columns>Total_Won_Project_Counts__c</columns>
+        <columns>Total_Won_Proposal_Amount__c</columns>
+        <columns>of_NFS_Users__c</columns>
+        <columns>Account_Sales_Reps__c</columns>
+        <columns>Origination_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2015</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2014</value>
+        </filters>
+        <filters>
+            <field>New_Customer_Onboard_Year__c</field>
+            <operation>equals</operation>
+            <value>2013</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Tracy Jude,TEST,NOESIS</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>Clean Fund LLC</value>
+        </filters>
+        <filters>
+            <field>Account_Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Origination_Owner__c</field>
+            <operation>equals</operation>
+            <value>Kellie Newsome,Shannon Mcaulay</value>
+        </filters>
+        <label>Shannon&apos;s Payment Advantage Effort</label>
+    </listViews>
+    <listViews>
+        <fullName>Vendor_Accounts</fullName>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>c2g__CODADefaultExpenseAccount__c</columns>
+        <columns>c2g__CODADimension1__c</columns>
+        <columns>c2g__CODAAccountsPayableControl__c</columns>
+        <columns>c2g__CODAFederallyReportable1099__c</columns>
+        <columns>c2g__CODAExemptionCertificate__c</columns>
+        <columns>c2g__CODATaxpayerIdentificationNumber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Vendor</value>
+        </filters>
+        <label>Vendor Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>X1099</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>c2g__CODAInvoiceEmail__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>c2g__CODAFederallyReportable1099__c</columns>
+        <columns>c2g__CODAIncomeTaxType__c</columns>
+        <columns>c2g__CODATaxpayerIdentificationNumber__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>c2g__CODAFederallyReportable1099__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>1099</label>
+    </listViews>
+    <listViews>
+        <fullName>dave_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Parent_Account__c</columns>
+        <columns>Services_Owner__c</columns>
+        <columns>Pro_Type__c</columns>
+        <columns>Top_Account_Start_Date__c</columns>
+        <columns>Top_Account_Expiration_Date__c</columns>
+        <columns>Top_Account_Owner__c</columns>
+        <columns>Top_Account_Ranking__c</columns>
+        <columns>Primary_Technology_Type__c</columns>
+        <columns>Primary_Business_Type__c</columns>
+        <columns>Customer_Relationship_Type__c</columns>
+        <columns>New_Customer_Onboard_Year__c</columns>
+        <columns>Company_Headquarter_State__c</columns>
+        <columns>Garden_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Services_Owner__c</field>
+            <operation>equals</operation>
+            <value>David Emmerich</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notEqual</operation>
+            <value>TRACY JUDE</value>
+        </filters>
+        <label>Dave&apos;s Accounts</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Inactive__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Target_Lead_Index__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Pro_Types__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Performance_Rebate_Participant__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>X4_9_Participant__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Top_Account_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Services_Owner__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00NU0000001Gch9</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00NU0000001GchC</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00NU0000004oLOx</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Inactive__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Target_Lead_Index__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>X4_9_Participant__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Performance_Rebate_Participant__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Pro_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Top_Account_Owner__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Services_Owner__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>c2g__CODAValidateCustomer</fullName>
+        <availability>online</availability>
+        <description>Validate Customer</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Customer</masterLabel>
+        <openType>sidebar</openType>
+        <page>c2g__codaccountvalidatecustomer</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>c2g__CODAValidateVendor</fullName>
+        <availability>online</availability>
+        <description>Validate Vendor fields in Account</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Vendor</masterLabel>
+        <openType>sidebar</openType>
+        <page>c2g__codaaccountvalidatevendor</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>c2g__CashMatching</fullName>
+        <availability>online</availability>
+        <description>Open the Cash Matching screen with the Account pre-populated.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Cash Matching</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/c2g__cashmatching?accountid=&apos; +  URLENCODE(Account.Id))}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that will be linked to the Account.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>echosign_dev1__Send_to_EchoSign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send to EchoSign</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Account.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>mkto_si__Add_to_Watch_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add to Watch List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>idArray = {!GETRECORDIDS($ObjectType.Account)};
+window.top.location = &quot;/apex/mkto_si__Add_to_Watch_List?contactType=Account&amp;contactIds=&quot; + idArray +&quot;&amp;retUrl=&quot; + encodeURIComponent(document.location.href);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>mkto_si__Add_to_Watch_List_Detail</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add to Watch List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.top.location = &quot;/apex/mkto_si__Add_to_Watch_List?contactType=Account&amp;contactIds={!Account.Id}&amp;retUrl=&quot; + encodeURIComponent(document.location.href);</url>
+    </webLinks>
+</CustomObject>

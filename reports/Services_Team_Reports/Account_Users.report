@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Services_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_quality_index__c</field>
+    </columns>
+    <columns>
+        <field>Account.Target_Lead_Index__c</field>
+    </columns>
+    <columns>
+        <field>Account.Pro_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Orig_Registration_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Account Users</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Services_Owner__c</column>
+            <operator>equals</operator>
+            <value>Achai Broner,David Emmerich,Angel Moreno,Mike Thomas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Inactive__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Account Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.SSA_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Account.Annual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Account.Company_Size__c</field>
+    </columns>
+    <columns>
+        <field>Account.Average_Project_Size__c</field>
+    </columns>
+    <columns>
+        <field>Account.Services_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Account.Pro_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Orig_Registration_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>SSA Accounts</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Services_Owner__c</column>
+            <operator>equals</operator>
+            <value>Achai Broner,David Emmerich,Angel Moreno,Mike Thomas,Cayla Johnston</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Inactive__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Pro_Type__c</column>
+            <operator>contains</operator>
+            <value>PLUS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Developer_SSA_Discussion__c</column>
+            <operator>equals</operator>
+            <value>SSA Candidate,SSA Introduction/Webinar,Application Sent,Application Received,Completed SSA Sent to Hannon for Approval,Lender Approved SSA,Lender Declined SSA,Developer Declined SSA Financing Option,SSA Kick-Off/Traning</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Developer_SSA_Discussion__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SSA Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

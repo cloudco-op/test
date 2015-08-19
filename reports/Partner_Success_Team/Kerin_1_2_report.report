@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Proposal_Amount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Account_Sales_Reps__c</field>
+    </columns>
+    <columns>
+        <field>Account.of_NFS_Users__c</field>
+    </columns>
+    <columns>
+        <field>Account.Kickoff_Call__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Target_Lead_Index__c</field>
+    </columns>
+    <columns>
+        <field>Account.Garden_Address__c</field>
+    </columns>
+    <columns>
+        <field>Account.Developer_SSA_Discussion__c</field>
+    </columns>
+    <columns>
+        <field>Account.Reference_Account__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>Account.Orig_Renewal_Date2__c</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Data Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Pro Front Office 90 Day Trial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <operator>notEqual</operator>
+            <value>BGC Partner-Program Partner</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Pro M&amp;V</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Pro Front Office</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Customer Engagement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>equals</operator>
+            <value>Pro M&amp;V;Noesis Financing Services-Advantage PLUS,Pro Front Office 90 Day Trial;Noesis Financing Services-Advantage PLUS,Pro Front Office 90 Day Trial;Noesis Financing Services-Advantage,Pro Front Office;Noesis Financing Services-Advantage PLUS,Pro Front Office;Noesis Financing Services-Advantage,Pro (Front Office and M&amp;V);Noesis Financing Services-Advantage PLUS,Pro (Front Office and M&amp;V);Noesis Financing Services-Advantage,Pro (Front Office and M&amp;V),Noesis Financing Services-Advantage PLUS,Noesis Financing Services-Advantage</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <operator>notContain</operator>
+            <value>pro project</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <operator>notContain</operator>
+            <value>dtz,keystone,genpro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Target_Lead_Index__c</column>
+            <operator>lessThan</operator>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <operator>notEqual</operator>
+            <value>TraneOregon - Pro Front Office + M&amp;V</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <operator>notEqual</operator>
+            <value>KLH Engineers - PRO Front Office + M&amp;V,TraneOregon - Pro Front Office + M&amp;V</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Account_Management_Territory2__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Kerin 1/2 report</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2015-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

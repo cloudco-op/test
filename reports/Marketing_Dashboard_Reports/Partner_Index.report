@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Management_Territory2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Target_Lead_Index__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_NAME</column>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>excludes</operator>
+            <value>Pro Front Office 90 Day Trial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Pro Front Office</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Pro (Front Office and M&amp;V)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pro_Type__c</column>
+            <operator>notEqual</operator>
+            <value>Data Services</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Partner Index</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2015-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-01-01</startDate>
+    </timeFrameFilter>
+</Report>
